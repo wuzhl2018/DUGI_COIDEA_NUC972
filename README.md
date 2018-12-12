@@ -41,11 +41,20 @@ git clone https://gitee.com/CCMYLOVE/DUGI_COIDEA_NUC972.git
 
 6.进入DUGI_COIDEA_NUC97X/9.IMGBINS目录，可以看到所有的映像文件，使用烧写工具烧写即可，
 需要理解命名规则：
-1.uE220S000.spl.bin   -> 1表示第1个烧写文件；u表示uBoot类型；      E表示执行地址，220表示2后面两个0; S表示存储地址；000表示不关注；
-2.dE000S150.uboot.bin -> 2表示第2个烧写文件；d表示Data类型；       E表示执行地址，000表示不关注;     S表示存储地址；150表示1后面五个0；
-3.eE000S840.env.bin   -> 3表示第3个烧写文件；e表示Environment类型；E表示执行地址，000表示不关注;     S表示存储地址；840表示8后面四个0；
-4.dE000S250.kernel.bin-> 4表示第4个烧写文件；d表示Data类型；       E表示执行地址，000表示不关注;     S表示存储地址；250表示2后面五个0；
-5.dE000S260.rootfs.bin-> 5表示第5个烧写文件；d表示Data类型；       E表示执行地址，000表示不关注;     S表示存储地址；260表示2后面六个0；
+1.uE220S000.spl.bin
+1表示第1个烧写文件；u表示uBoot类型；      E表示执行地址，220表示2后面两个0; S表示存储地址；000表示不关注；
+
+2.dE000S150.uboot.bin
+2表示第2个烧写文件；d表示Data类型；       E表示执行地址，000表示不关注;     S表示存储地址；150表示1后面五个0；
+
+3.eE000S840.env.bin
+3表示第3个烧写文件；e表示Environment类型；E表示执行地址，000表示不关注;     S表示存储地址；840表示8后面四个0；
+
+4.dE000S250.kernel.bin
+4表示第4个烧写文件；d表示Data类型；       E表示执行地址，000表示不关注;     S表示存储地址；250表示2后面五个0；
+
+5.dE000S260.rootfs.bin
+5表示第5个烧写文件；d表示Data类型；       E表示执行地址，000表示不关注;     S表示存储地址；260表示2后面六个0；
 
 #### 开发板购买地址
 https://item.taobao.com/item.htm?spm=a230r.1.14.52.72f53ce7czs7mu&id=558199223440&ns=1&abbucket=8#detail&qq-pf-to=pcqq.temporaryc2c
