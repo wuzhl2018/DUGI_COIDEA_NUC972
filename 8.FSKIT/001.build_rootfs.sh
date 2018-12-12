@@ -8,7 +8,7 @@ export TOPOUT=${TOPDIR}/output
 export YAFFS2_DIN_FILE=${TOPDIR}/src/rootfs
 export YAFFS2_OUT_NAME=5.dE000S260.rootfs.bin
 export YAFFS2_OUT_FILE=${TOPOUT}/${YAFFS2_OUT_NAME}
-export YAFFS2_OUT_COPY=/mnt/hgfs/D/1.CDNUC972
+export YAFFS2_OUT_COPY=${TOPDIR}/../9.IMGBINS
 
 check_compiler()
 {

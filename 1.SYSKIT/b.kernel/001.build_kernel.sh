@@ -11,7 +11,7 @@ export MODULE_SRC_DIR=$KERNEL_TOPDIR/$MODULE_SRC_NAME
 export MODULE_OUT_DIR=$KERNEL_TOPDIR/output
 export MODULE_DEF_CFG=nuc972_coidea_defconfig
 export MODULE_MOD_INS=$KERNEL_TOPDIR/install
-export MODULE_CPY_DIR=/mnt/hgfs/D/1.CDNUC972/
+export MODULE_CPY_DIR=${KERNEL_TOPDIR}/../../9.IMGBINS
 
 check_compiler()
 {

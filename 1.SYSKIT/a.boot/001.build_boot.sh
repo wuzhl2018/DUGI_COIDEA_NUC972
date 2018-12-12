@@ -11,7 +11,7 @@ export MODULE_SRC_NAME=uboot
 export MODULE_SRC_DIR=$BOOT_TOPDIR/$MODULE_SRC_NAME
 export MODULE_OUT_DIR=$BOOT_TOPDIR/output
 export MODULE_DEF_CFG=nuc970_config
-export MODULE_CPY_DIR=/mnt/hgfs/D/1.CDNUC972/
+export MODULE_CPY_DIR=${BOOT_TOPDIR}/../../9.IMGBINS
 
 check_compiler()
 {
