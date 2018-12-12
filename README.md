@@ -18,30 +18,31 @@
 
 #### 安装教程
 
-1. 使用git clone 下载源码：
+- 1. 使用git clone 下载源码：
 git clone https://gitee.com/CCMYLOVE/DUGI_COIDEA_NUC972.git
 
 #### 使用说明
 
-1.进入DUGI_COIDEA_NUC97X/1.SYSKIT/a.boot目录，执行以下命令编译u-boot：
+- 1.进入DUGI_COIDEA_NUC97X/1.SYSKIT/a.boot目录，执行以下命令编译u-boot：
 (master)$ ./001.build_boot.sh defconfig
 (master)$ ./001.build_boot.sh build
 
-2.进入DUGI_COIDEA_NUC97X/1.SYSKIT/b.kernel目录，执行以下命令编译kernel：
+- 2.进入DUGI_COIDEA_NUC97X/1.SYSKIT/b.kernel目录，执行以下命令编译kernel：
 (master)$ ./001.build_kernel.sh defconfig
 (master)$ ./001.build_kernel.sh build
 
-3.进入DUGI_COIDEA_NUC97X/2.MIDKIT目录，分别执行编译脚本，也可以执行统一脚本：
+- 3.进入DUGI_COIDEA_NUC97X/2.MIDKIT目录，分别执行编译脚本，也可以执行统一脚本：
 ./000.build_midkit.sh （此处后续会有更新）
 
-4.进入DUGI_COIDEA_NUC97X/8.FSKIT目录，执行以下命令收集中间件：
+- 4.进入DUGI_COIDEA_NUC97X/8.FSKIT目录，执行以下命令收集中间件：
 ./002.install_midkit_to_rootfs.sh build
 
-5.进入DUGI_COIDEA_NUC97X/8.FSKIT目录，执行以下命令构建文件系统：
+- 5.进入DUGI_COIDEA_NUC97X/8.FSKIT目录，执行以下命令构建文件系统：
 ./001.build_rootfs.sh  build
 
-6.进入DUGI_COIDEA_NUC97X/9.IMGBINS目录，可以看到所有的映像文件，使用烧写工具烧写即可，
-需要理解命名规则：
+- 6.进入DUGI_COIDEA_NUC97X/9.IMGBINS目录，可以看到所有的映像文件，使用烧写工具烧写即可。
+
+理解命名规则：
 1.uE220S000.spl.bin
 1表示第1个烧写文件；u表示uBoot类型；      E表示执行地址，220表示2后面两个0; S表示存储地址；000表示不关注；
 
