@@ -1,0 +1,12 @@
+
+config qgpio
+
+tristate"qgpio"
+
+default y
+
+---help---
+
+  Say 'Y' here, it will be compiled into thekernel;and qlqc.taobao.com.
+
+

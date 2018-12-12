@@ -1,0 +1,4 @@
+root:*:0:
+ftpadmin:x:1081:
+nobody:x:1080:
+www:x:1000:

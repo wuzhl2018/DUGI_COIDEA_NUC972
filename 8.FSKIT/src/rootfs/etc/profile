@@ -1,0 +1,13 @@
+#!/bin/sh
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/home/root
+export LD_LIBRARY_PATH=/lib:/usr/lib:/home/root
+BASH=sh
+PS1='[\u@\h /\W]\\$'
+alias ll='/bin/ls --color=tty -la'
+alias ls='/bin/ls --color=tty'
+alias vim='/bin/vi'
+alias rz='lrz'
+alias sz='lsz'
+export USER='id -un'
+export LOGNAME=$USER
+export HOSTNAME=`/bin/hostname`

@@ -1,0 +1,8 @@
+libcrc32.o: lib/libcrc32.c \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdint.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/stdint.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/features.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wchar.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wordsize.h

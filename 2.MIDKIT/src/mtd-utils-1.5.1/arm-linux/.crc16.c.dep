@@ -1,0 +1,31 @@
+crc16.o: mkfs.ubifs/crc16.c mkfs.ubifs/crc16.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/stdlib.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/features.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stddef.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/waitflags.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/waitstatus.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/endian.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/endian.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/byteswap.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap-common.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wordsize.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/typesizes.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/pthreadtypes.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/time.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/select.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/select.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/sigset.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/time.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/sysmacros.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/xlocale.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/locale.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_locale.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/alloca.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdint.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/stdint.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wchar.h

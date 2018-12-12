@@ -1,0 +1,87 @@
+src/lzo1b_2.lo: src/lzo1b_2.c src/compr1b.h src/config1b.h src/lzo_conf.h \
+ include/lzo/lzoconf.h config.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/limits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/syslimits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/limits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/features.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix1_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/local_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/limits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_local_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix2_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stddef.h \
+ include/lzo/lzodefs.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/string.h \
+ src/lzo_supp.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/assert.h \
+ src/lzo_func.h src/lzo_ptr.h include/lzo/lzo1b.h src/lzo1b_de.h \
+ src/lzo_dict.h src/stats1b.h src/lzo1b_cc.h src/lzo1b_c.ch \
+ src/lzo1b_sm.ch src/lzo1b_tm.ch src/lzo1b_cr.ch src/lzo1b_cm.ch
+
+src/compr1b.h:
+
+src/config1b.h:
+
+src/lzo_conf.h:
+
+include/lzo/lzoconf.h:
+
+config.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/limits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/syslimits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/limits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/features.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix1_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/local_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/limits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_local_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix2_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stddef.h:
+
+include/lzo/lzodefs.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/string.h:
+
+src/lzo_supp.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/assert.h:
+
+src/lzo_func.h:
+
+src/lzo_ptr.h:
+
+include/lzo/lzo1b.h:
+
+src/lzo1b_de.h:
+
+src/lzo_dict.h:
+
+src/stats1b.h:
+
+src/lzo1b_cc.h:
+
+src/lzo1b_c.ch:
+
+src/lzo1b_sm.ch:
+
+src/lzo1b_tm.ch:
+
+src/lzo1b_cr.ch:
+
+src/lzo1b_cm.ch:

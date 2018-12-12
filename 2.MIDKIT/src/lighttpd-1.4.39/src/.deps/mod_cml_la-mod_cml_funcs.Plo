@@ -1,0 +1,343 @@
+mod_cml_la-mod_cml_funcs.lo: mod_cml_funcs.c buffer.h ../config.h \
+ settings.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/stdlib.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/features.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stddef.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/waitflags.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/waitstatus.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/endian.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/endian.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/byteswap.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap-common.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/types.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/types.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/wordsize.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/typesizes.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/pthreadtypes.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/time.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/select.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/select.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/sigset.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/time.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/sysmacros.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/xlocale.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/locale.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_locale.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/alloca.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/stdio.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_stdio.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/wchar.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/wchar.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_mutex.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/pthread.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sched.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/sched.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_clk_tck.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/signal.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/setjmp.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_pthread.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdarg.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/stdio_lim.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdint.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/stdint.h \
+ server.h base.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/time.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/stat.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/stat.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/limits.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/syslimits.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/limits.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix1_lim.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/local_lim.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/limits.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_local_lim.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix2_lim.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/xopen_lim.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/inttypes.h \
+ array.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/2.MIDKIT/output/include/pcre.h \
+ chunk.h keyvalue.h fdevent.h sys-socket.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/socket.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/uio.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uio.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket_type.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/sockaddr.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/socket.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/socket.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/sockios.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/sockios.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/ioctl.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctls.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctls.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctls.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/ioctl.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctl.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctl.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctl-types.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/ttydefaults.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/netinet/in.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/in.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/netinet/tcp.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/un.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/string.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/arpa/inet.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/netdb.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/rpc/netdb.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/siginfo.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/netdb.h \
+ splaytree.h etag.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/unistd.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix_opt.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/environments.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/confname.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/getopt.h \
+ log.h plugin.h response.h mod_cml.h stream.h mod_cml_funcs.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/errno.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/errno.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/errno.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/errno.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno-base.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/dirent.h \
+ /home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/dirent.h \
+ md5.h
+
+buffer.h:
+
+../config.h:
+
+settings.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/stdlib.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/features.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stddef.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/waitflags.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/waitstatus.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/endian.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/endian.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/byteswap.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap-common.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/types.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/types.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/wordsize.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/typesizes.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/pthreadtypes.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/time.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/select.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/select.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/sigset.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/time.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/sysmacros.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/xlocale.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/locale.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_locale.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/alloca.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/stdio.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_stdio.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/wchar.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/wchar.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_mutex.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/pthread.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sched.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/sched.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_clk_tck.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/signal.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/setjmp.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_pthread.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdarg.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/stdio_lim.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdint.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/stdint.h:
+
+server.h:
+
+base.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/time.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/stat.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/stat.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/limits.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/syslimits.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/limits.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix1_lim.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/local_lim.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/limits.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_local_lim.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix2_lim.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/xopen_lim.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/inttypes.h:
+
+array.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/2.MIDKIT/output/include/pcre.h:
+
+chunk.h:
+
+keyvalue.h:
+
+fdevent.h:
+
+sys-socket.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/socket.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/uio.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/uio.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket_type.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/sockaddr.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/socket.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/socket.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/sockios.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/sockios.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/ioctl.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctls.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctls.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctls.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/ioctl.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctl.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctl.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctl-types.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/ttydefaults.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/netinet/in.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/in.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/netinet/tcp.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/sys/un.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/string.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/arpa/inet.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/netdb.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/rpc/netdb.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/siginfo.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/netdb.h:
+
+splaytree.h:
+
+etag.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/unistd.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix_opt.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/environments.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/confname.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/getopt.h:
+
+log.h:
+
+plugin.h:
+
+response.h:
+
+mod_cml.h:
+
+stream.h:
+
+mod_cml_funcs.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/errno.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/errno.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/errno.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/errno.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno-base.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/dirent.h:
+
+/home/dever/Works/DUGI_COIDEA_NUC972/0.GCCKIT/arm_linux_4.8/usr/include/bits/dirent.h:
+
+md5.h:

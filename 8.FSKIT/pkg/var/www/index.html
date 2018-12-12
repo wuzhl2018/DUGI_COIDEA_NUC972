@@ -1,0 +1,76 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type=text/css>
+        html, body {
+                margin: 0;
+                text-align: center;
+        }
+        #container {
+                position: relative;
+                margin: 0 auto;
+                width: 760px;
+                text-align: center;
+        }
+</style>
+
+</head>
+<script>
+  	function check(ch){
+		deleteAllCookies();
+		if(!ch){
+                	if(log.Username.value =="" || log.Password.value==""){
+                        	alert("Please Enter your ID and password ");
+                	}else {
+                		setCookie("username",log.Username.value,1);
+				log.submit();
+                	}
+		}
+        }
+
+	function setCookie(cname,cvalue,exdays)
+	{
+		var exdate = new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+		var expires = "expires="+exdate.toUTCString();
+		str = document.location.href;
+        	if (str.indexOf("http://") == 0){
+                	x = str.indexOf("/", 7);
+                	if (x == -1) x = str.length;
+                	var Server_IP = str.substring(7,x);
+        	}
+		
+		document.cookie =cname + "=" + cvalue+"&8&"+Server_IP+";"+0;
+	}
+	
+	function deleteAllCookies() {
+		var cookies = document.cookie.split(";");
+    
+		for (var i = 0; i < cookies.length; i++) {
+        		var cookie = cookies[i];
+		//	alert(cookie);
+        		var eqPos = cookie.indexOf("=");
+        		var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        		document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    		}
+	}	
+	
+</script>
+<body>
+<div id="container">
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#980000 SIZE=100>
+<IMG SRC="picture/log.jpg">
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#90000 SIZE=40>
+<h3>登录界面</h3>
+<form name=log method="post" action="/index2.html">
+   用 户 : 
+<input type="text" name="Username"  size=10 maxlength=15><p>
+   密 码 : 
+<input type="password" name="Password"  size=10 maxlength=15><p>
+<input type=hidden name="oth" value="1" ><p>
+<input type="button"  value="Submit" onclick=check(0)  />
+</form>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="100%" color=#90000 SIZE=10>
+</div>
+</body>
+</html>                  

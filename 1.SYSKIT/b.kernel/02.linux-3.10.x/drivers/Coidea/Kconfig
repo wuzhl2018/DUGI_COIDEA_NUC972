@@ -1,0 +1,6 @@
+menu "Coidea"
+
+
+source drivers/Coidea/qgpio/Kconfig
+
+endmenu

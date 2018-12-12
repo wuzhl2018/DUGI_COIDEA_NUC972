@@ -1,0 +1,820 @@
+--------------------
+./configure --shared --prefix=/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+Fri Nov 30 02:39:42 CST 2018
+=== ztest75455.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -c ztest75455.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest75455.c ===
+int foo() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest75455.c
+
+Checking for shared library support...
+=== ztest75455.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -w -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC ztest75455.c
+arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -o ztest75455.so ztest75455.o
+Building shared library libz.so.1.2.11 with arm-linux-gcc.
+
+=== ztest75455.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest75455.c
+Checking for size_t... Yes.
+
+
+=== ztest75455.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest75455.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest75455.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest75455 ztest75455.c
+Checking for strerror... Yes.
+
+=== ztest75455.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest75455.c
+Checking for unistd.h... Yes.
+
+=== ztest75455.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest75455.c
+Checking for stdarg.h... Yes.
+
+=== ztest75455.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest75455.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest75455.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest75455 ztest75455.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest75455.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest75455.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest75455.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest75455.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared all64
+AR = ar
+ARFLAGS = rc
+CC = arm-linux-gcc
+CFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = arm-linux-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS = -L/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/lib
+LDSHARED = arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib
+SFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
+STATICLIB = libz.a
+TEST = all teststatic testshared test64
+VER = 1.2.11
+Z_U4 =
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+sharedlibdir = ${libdir}
+uname = Linux
+--------------------
+
+
+--------------------
+./configure --shared --prefix=/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+Mon Dec  3 03:07:22 CST 2018
+=== ztest126019.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -c ztest126019.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest126019.c ===
+int foo() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest126019.c
+
+Checking for shared library support...
+=== ztest126019.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -w -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC ztest126019.c
+arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -o ztest126019.so ztest126019.o
+Building shared library libz.so.1.2.11 with arm-linux-gcc.
+
+=== ztest126019.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest126019.c
+Checking for size_t... Yes.
+
+
+=== ztest126019.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest126019.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest126019.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest126019 ztest126019.c
+Checking for strerror... Yes.
+
+=== ztest126019.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest126019.c
+Checking for unistd.h... Yes.
+
+=== ztest126019.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest126019.c
+Checking for stdarg.h... Yes.
+
+=== ztest126019.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest126019.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest126019.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest126019 ztest126019.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest126019.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest126019.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest126019.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest126019.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared all64
+AR = ar
+ARFLAGS = rc
+CC = arm-linux-gcc
+CFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = arm-linux-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS = -L/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/lib
+LDSHARED = arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib
+SFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
+STATICLIB = libz.a
+TEST = all teststatic testshared test64
+VER = 1.2.11
+Z_U4 =
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+sharedlibdir = ${libdir}
+uname = Linux
+--------------------
+
+
+--------------------
+./configure --shared --prefix=/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+Mon Dec  3 03:54:52 CST 2018
+=== ztest64766.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -c ztest64766.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest64766.c ===
+int foo() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest64766.c
+
+Checking for shared library support...
+=== ztest64766.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -w -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC ztest64766.c
+arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -o ztest64766.so ztest64766.o
+Building shared library libz.so.1.2.11 with arm-linux-gcc.
+
+=== ztest64766.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest64766.c
+Checking for size_t... Yes.
+
+
+=== ztest64766.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest64766.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest64766.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest64766 ztest64766.c
+Checking for strerror... Yes.
+
+=== ztest64766.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest64766.c
+Checking for unistd.h... Yes.
+
+=== ztest64766.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest64766.c
+Checking for stdarg.h... Yes.
+
+=== ztest64766.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest64766.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest64766.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest64766 ztest64766.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest64766.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest64766.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest64766.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest64766.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared all64
+AR = ar
+ARFLAGS = rc
+CC = arm-linux-gcc
+CFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = arm-linux-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS = -L/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/lib
+LDSHARED = arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib
+SFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
+STATICLIB = libz.a
+TEST = all teststatic testshared test64
+VER = 1.2.11
+Z_U4 =
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+sharedlibdir = ${libdir}
+uname = Linux
+--------------------
+
+
+--------------------
+./configure --shared --prefix=/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+Mon Dec  3 04:11:36 CST 2018
+=== ztest130614.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -c ztest130614.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest130614.c ===
+int foo() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest130614.c
+
+Checking for shared library support...
+=== ztest130614.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -w -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC ztest130614.c
+arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -o ztest130614.so ztest130614.o
+Building shared library libz.so.1.2.11 with arm-linux-gcc.
+
+=== ztest130614.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest130614.c
+Checking for size_t... Yes.
+
+
+=== ztest130614.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest130614.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest130614.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest130614 ztest130614.c
+Checking for strerror... Yes.
+
+=== ztest130614.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest130614.c
+Checking for unistd.h... Yes.
+
+=== ztest130614.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest130614.c
+Checking for stdarg.h... Yes.
+
+=== ztest130614.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest130614.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest130614.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest130614 ztest130614.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest130614.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest130614.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest130614.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest130614.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared all64
+AR = ar
+ARFLAGS = rc
+CC = arm-linux-gcc
+CFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = arm-linux-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS = -L/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/lib
+LDSHARED = arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib
+SFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
+STATICLIB = libz.a
+TEST = all teststatic testshared test64
+VER = 1.2.11
+Z_U4 =
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+sharedlibdir = ${libdir}
+uname = Linux
+--------------------
+
+
+--------------------
+./configure --shared --prefix=/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+Tue Dec  4 04:03:10 CST 2018
+=== ztest79473.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -c ztest79473.c
+... using gcc
+
+Checking for obsessive-compulsive compiler options...
+=== ztest79473.c ===
+int foo() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest79473.c
+
+Checking for shared library support...
+=== ztest79473.c ===
+extern int getchar();
+int hello() {return getchar();}
+===
+arm-linux-gcc -w -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC ztest79473.c
+arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -o ztest79473.so ztest79473.o
+Building shared library libz.so.1.2.11 with arm-linux-gcc.
+
+=== ztest79473.c ===
+#include <stdio.h>
+#include <stdlib.h>
+size_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include ztest79473.c
+Checking for size_t... Yes.
+
+
+=== ztest79473.c ===
+#include <sys/types.h>
+off64_t dummy = 0;
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest79473.c
+Checking for off64_t... Yes.
+Checking for fseeko... Yes.
+
+=== ztest79473.c ===
+#include <string.h>
+#include <errno.h>
+int main() { return strlen(strerror(errno)); }
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest79473 ztest79473.c
+Checking for strerror... Yes.
+
+=== ztest79473.c ===
+#include <unistd.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest79473.c
+Checking for unistd.h... Yes.
+
+=== ztest79473.c ===
+#include <stdarg.h>
+int main() { return 0; }
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest79473.c
+Checking for stdarg.h... Yes.
+
+=== ztest79473.c ===
+#include <stdio.h>
+#include <stdarg.h>
+#include "zconf.h"
+int main()
+{
+#ifndef STDC
+  choke me
+#endif
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest79473.c
+Checking whether to use vs[n]printf() or s[n]printf()... using vs[n]printf().
+
+=== ztest79473.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return 0;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -o ztest79473 ztest79473.c
+Checking for vsnprintf() in stdio.h... Yes.
+
+=== ztest79473.c ===
+#include <stdio.h>
+#include <stdarg.h>
+int mytest(const char *fmt, ...)
+{
+  int n;
+  char buf[20];
+  va_list ap;
+  va_start(ap, fmt);
+  n = vsnprintf(buf, sizeof(buf), fmt, ap);
+  va_end(ap);
+  return n;
+}
+int main()
+{
+  return (mytest("Hello%d\n", 1));
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest79473.c
+Checking for return value of vsnprintf()... Yes.
+
+=== ztest79473.c ===
+#define ZLIB_INTERNAL __attribute__((visibility ("hidden")))
+int ZLIB_INTERNAL foo;
+int main()
+{
+  return 0;
+}
+===
+arm-linux-gcc -c -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 ztest79473.c
+Checking for attribute(visibility) support... Yes.
+
+ALL = static shared all64
+AR = ar
+ARFLAGS = rc
+CC = arm-linux-gcc
+CFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+CPP = arm-linux-gcc -E
+EXE =
+LDCONFIG = ldconfig
+LDFLAGS = -L/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/lib
+LDSHARED = arm-linux-gcc -shared -Wl,-soname,libz.so.1,--version-script,zlib.map
+LDSHAREDLIBC = -lc
+OBJC = $(OBJZ) $(OBJG)
+PIC_OBJC = $(PIC_OBJZ) $(PIC_OBJG)
+RANLIB = ranlib
+SFLAGS = -I/home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output/include -fPIC -D_LARGEFILE64_SOURCE=1 -DHAVE_HIDDEN
+SHAREDLIB = libz.so
+SHAREDLIBM = libz.so.1
+SHAREDLIBV = libz.so.1.2.11
+STATICLIB = libz.a
+TEST = all teststatic testshared test64
+VER = 1.2.11
+Z_U4 =
+SRCDIR =
+exec_prefix = ${prefix}
+includedir = ${prefix}/include
+libdir = ${exec_prefix}/lib
+mandir = ${prefix}/share/man
+prefix = /home/dever/Works/NUC97X_CODIEA/2.MIDKIT/output
+sharedlibdir = ${libdir}
+uname = Linux
+--------------------
+
+

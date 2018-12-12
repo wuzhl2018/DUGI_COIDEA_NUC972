@@ -1,0 +1,261 @@
+netdrv_ethtool.o: netdrv_ethtool.c ../config.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/unistd.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/features.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix_opt.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wordsize.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stddef.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/typesizes.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/pthreadtypes.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/endian.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/endian.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/byteswap.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap-common.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/confname.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/getopt.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/time.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/select.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/select.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/sigset.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/time.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/sysmacros.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/string.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/ioctl.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctls.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctls.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctls.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/ioctl.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctl.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctl.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctl-types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/ttydefaults.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/stdio.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_stdio.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/wchar.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wchar.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_mutex.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/pthread.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sched.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/sched.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_clk_tck.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/signal.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/setjmp.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_pthread.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdarg.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/stdio_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/errno.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/errno.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/errno.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/errno.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno-base.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/net/if.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/socket.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/uio.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uio.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/limits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/syslimits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/limits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix1_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/local_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/limits.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_local_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix2_lim.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket_type.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/sockaddr.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/socket.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/socket.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/sockios.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/sockios.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/int-ll64.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/bitsperlong.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/bitsperlong.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/sockios.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/posix_types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/stddef.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/posix_types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/posix_types.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/ethtool.h \
+ /home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/if_ether.h
+
+../config.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/unistd.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/features.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_config.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/cdefs.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix_opt.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wordsize.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stddef.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/typesizes.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/pthreadtypes.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/endian.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/endian.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/byteswap.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/byteswap-common.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/confname.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/getopt.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/time.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/select.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/select.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/sigset.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/time.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/sysmacros.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/string.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/ioctl.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctls.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctls.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctls.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/ioctl.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/ioctl.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/ioctl.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/ioctl-types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/ttydefaults.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/stdio.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_stdio.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/wchar.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/wchar.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_mutex.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/pthread.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sched.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/sched.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_clk_tck.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/signal.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/setjmp.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_pthread.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include/stdarg.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/stdio_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/errno.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/errno.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/errno.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/errno.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/errno-base.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/net/if.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/socket.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/sys/uio.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uio.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/limits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/lib/gcc/arm-nuvoton-linux-uclibceabi/4.8.4/include-fixed/syslimits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/limits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix1_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/local_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/limits.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/uClibc_local_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/posix2_lim.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/socket_type.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/usr/include/bits/sockaddr.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/socket.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/socket.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/sockios.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/sockios.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/int-ll64.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/bitsperlong.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/bitsperlong.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/sockios.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/posix_types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/stddef.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm/posix_types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/asm-generic/posix_types.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/ethtool.h:
+
+/home/dever/Works/NUC97X_CODIEA/0.GCCKIT/arm_linux_4.8/arm-nuvoton-linux-uclibceabi/include/linux/if_ether.h:
