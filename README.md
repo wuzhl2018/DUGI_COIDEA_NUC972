@@ -18,7 +18,7 @@
 
 #### 安装教程
 
-- 1. 使用git clone 下载源码：
+1. 使用git clone 下载源码：
 git clone https://gitee.com/CCMYLOVE/DUGI_COIDEA_NUC972.git
 
 #### 使用说明
