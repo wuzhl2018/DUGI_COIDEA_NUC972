@@ -95,4 +95,7 @@ sub_build 015.build_dropbear.sh
 sub_build 016.build_vsftpd.sh
 sub_build 017.build_db.sh
 sub_build 018.build_iproute2.sh
+sub_build 019.build_vsftpd.sh
+sub_build 020.build_lighttpd.sh
+sub_build 021.build_tslib.sh
 pdone "build midkit [OK]"
